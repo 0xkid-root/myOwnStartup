@@ -16,7 +16,7 @@ export function Hero() {
       {/* Badge */}
       <div className="relative z-10 inline-flex items-center gap-1.5 bg-card border border-border rounded-full px-3.5 py-1.5 font-medium text-xs text-muted mb-7 shadow-sm">
         <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-        Applications open for Summer Intership 2026
+        Applications open for Summer Internship 2026
       </div>
 
       {/* Heading */}
