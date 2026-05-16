@@ -3,6 +3,7 @@ import { Programs } from '@/components/Programs';
 import { HowItWorks } from '@/components/HowItWorks';
 import { CTA } from '@/components/CTA';
 import { Footer } from '@/components/Footer';
+import { WhatYouBuild } from '@/components/WhatYouBuild';
 
 export const metadata = {
   title: 'Programs - ZeroTwoCode',
@@ -14,7 +15,8 @@ export default function ProgramsPage() {
     <main className="bg-background overflow-x-hidden">
       <Navigation />
       <Programs />
-      <HowItWorks />
+      <WhatYouBuild />
+      {/* <HowItWorks /> */}
       <CTA />
       <Footer />
     </main>

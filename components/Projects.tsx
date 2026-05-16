@@ -38,8 +38,27 @@ export function Projects() {
             Check out some of the amazing products our students have built during their internships.
           </p>
         </div>
-        <Button variant="outline" className="bg-primary border border-[#2d3148] text-white hover:border-accent text-xs font-semibold">
+        <Button
+          variant="outline"
+          className="
+    bg-white
+    text-[#1e293b]
+    border border-[#dbe4ff]
+    font-semibold
+    text-sm
+    px-7 py-3
+    rounded-xl
+    shadow-sm
+    hover:bg-[#edf4ff]
+    hover:border-[#6ea8fe]
+    hover:text-[#2563eb]
+    hover:shadow-md
+    transition-all
+    duration-300
+  "
+        >
           View All Projects
+          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
         </Button>
       </div>
 

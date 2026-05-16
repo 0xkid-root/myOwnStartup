@@ -7,6 +7,7 @@ import { Projects } from '@/components/Projects';
 import { Testimonials } from '@/components/Testimonials';
 import { CTA } from '@/components/CTA';
 import { Footer } from '@/components/Footer';
+import { ProgramsPreview } from '@/components/ProgramsPreview';
 
 export default function Home() {
   return (
@@ -15,9 +16,10 @@ export default function Home() {
       <Hero />
       <Stats />
       <TechStack />
+      <ProgramsPreview />
       <WhyChoose />
       <Projects />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CTA />
       <Footer />
     </main>
