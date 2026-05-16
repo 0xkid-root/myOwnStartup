@@ -16,7 +16,7 @@ export function Hero() {
       {/* Badge */}
       <div className="relative z-10 inline-flex items-center gap-1.5 bg-card border border-border rounded-full px-3.5 py-1.5 font-medium text-xs text-muted mb-7 shadow-sm">
         <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-        Applications open for Summer 2024
+        Applications open for Summer Intership 2026
       </div>
 
       {/* Heading */}
@@ -26,7 +26,7 @@ export function Hero() {
 
       {/* Subheading */}
       <p className="relative z-10 text-muted text-base md:text-lg max-w-2xl mb-9">
-        Skip the theory. Build real products with industry engineers, get paid while you learn, and launch your tech career in months, not years.
+        Learn by building real products, work with industry engineers, and launch your tech career faster than traditional education.
       </p>
 
       {/* CTA Buttons */}
@@ -37,13 +37,28 @@ export function Hero() {
           </Button>
         </Link>
         <Link href="/programs">
-          <Button
-            variant="outline"
-            className="bg-card text-foreground border-1.5 border-border font-semibold text-sm px-7 py-3 rounded-xl hover:border-accent transition-colors"
-          >
-            Explore Programs
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+         <Button
+  variant="outline"
+  className="
+    bg-white
+    text-[#1e293b]
+    border border-[#dbe4ff]
+    font-semibold
+    text-sm
+    px-7 py-3
+    rounded-xl
+    shadow-sm
+    hover:bg-[#edf4ff]
+    hover:border-[#6ea8fe]
+    hover:text-[#2563eb]
+    hover:shadow-md
+    transition-all
+    duration-300
+  "
+>
+  Explore Programs
+  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+</Button>
         </Link>
       </div>
     </section>
