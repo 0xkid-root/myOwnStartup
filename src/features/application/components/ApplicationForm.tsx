@@ -30,34 +30,59 @@ export function ApplicationForm() {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('loading');
-    setErrors({});
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    try {
-      const response = await ApplicationService.submitApplication(formData);
+  try {
+    setStatus("loading");
 
-      if (response.success) {
-        setStatus('success');
-        setSuccessMessage(response.message);
-        setFormData(DEFAULT_FORM_VALUES);
-        // Reset success message after 5 seconds
-        setTimeout(() => {
-          setStatus('idle');
-          setSuccessMessage('');
-        }, 5000);
-      } else {
-        setStatus('error');
-        setErrors({ motivation: response.message });
+    const response = await fetch(
+      "https://sheetdb.io/api/v1/ms5yn4qm30tpx",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          data: [
+            {
+              Timestamp: new Date().toLocaleString(),
+              "Full Name": formData.fullName,
+              Email: formData.email,
+              Phone: formData.phone,
+              Program: formData.program,
+              Experience: formData.codingExperience,
+              Motivation: formData.motivation,
+            },
+          ],
+        }),
       }
-    } catch (error) {
-      setStatus('error');
-      const errorMessage = error instanceof Error ? error.message : 'Failed to submit application';
-      setErrors({ motivation: errorMessage });
-    }
-  };
+    );
 
+    const data = await response.json();
+
+    console.log(data);
+
+    if (response.ok) {
+      setStatus("success");
+      setSuccessMessage("Application submitted successfully!");
+
+      setFormData(DEFAULT_FORM_VALUES);
+
+      setTimeout(() => {
+        setStatus("idle");
+        setSuccessMessage("");
+      }, 5000);
+    } else {
+      setStatus("error");
+      console.error(data);
+    }
+  } catch (error) {
+    console.error(error);
+    setStatus("error");
+  }
+};
   return (
     <div className="w-full lg:w-2/3 bg-white rounded-2xl p-8 md:p-12">
       <h2 className="text-3xl font-bold text-primary mb-8">Application Form</h2>
@@ -147,7 +172,7 @@ export function ApplicationForm() {
         </div>
 
         {/* GitHub and LinkedIn */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label htmlFor="githubProfile" className="block text-sm font-semibold text-foreground mb-2">
               GitHub Profile <span className="text-red-500">*</span>
@@ -176,7 +201,7 @@ export function ApplicationForm() {
               className="w-full px-4 py-3 border border-[#e0e0e0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b6ef8] focus:border-transparent transition-colors"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Coding Experience */}
         <div>

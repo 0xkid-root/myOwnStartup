@@ -21,7 +21,7 @@ export const PROGRAMS_DATA: Program[] = [
     category: 'internship',
     duration: '8 Weeks (June 10 - Aug 2)',
     commitment: 'Full-time (40 hrs/week)',
-    location: 'Remote / San Francisco',
+    location: 'Remote / Lucknow',
     techStack: ['C', 'HTML', 'CSS', 'JS', 'React', 'Node', 'Express', 'MongoDB', 'SQL'],
     circleColor: 'bg-[#3b6ef8]',
     outcomes: [
@@ -78,7 +78,7 @@ export const PROGRAMS_DATA: Program[] = [
     category: 'internship',
     duration: '4 Weeks (Dec 16 - Jan 13)',
     commitment: 'Full-time (40 hrs/week)',
-    location: 'Remote / San Francisco',
+    location: 'Remote / Lucknow',
     techStack: ['React', 'Node', 'Express', 'MongoDB', 'CSS', 'Git'],
     circleColor: 'bg-[#06c5d3]',
     outcomes: [
@@ -135,7 +135,7 @@ export const PROGRAMS_DATA: Program[] = [
     category: 'apprenticeship',
     duration: '6 Months (Ongoing Cohorts)',
     commitment: 'Full-time (40 hrs/week)',
-    location: 'Various (SF, NYC, Remote)',
+    location: 'Remote ,Offline / Lucknow',
     techStack: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'AWS', 'Full Stack'],
     circleColor: 'bg-[#0d0f1a]',
     outcomes: [

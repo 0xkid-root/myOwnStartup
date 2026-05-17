@@ -22,22 +22,26 @@ export const CODING_EXPERIENCE_LEVELS: CodingExperienceLevel[] = [
     description: 'Multiple years of professional experience',
   },
 ];
-
 export const BENEFITS = [
   {
-    title: 'No Application Fee',
+    title: "Work on Real Startup Products",
     description:
-      'Applying to our programs is completely free. We review applications on a rolling basis.',
+      "Build production-ready applications and contribute to real-world startup projects instead of tutorial-based learning.",
   },
   {
-    title: 'Quick Process',
+    title: "Learn from Industry Mentors",
     description:
-      'You will hear back from our admissions team within 48 hours of submitting your application.',
+      "Get direct mentorship from experienced developers, startup engineers, and technical leaders working in the industry.",
   },
   {
-    title: 'Technical Assessment',
+    title: "Build Strong Portfolio Projects",
     description:
-      'Selected candidates will be invited to a short 30-minute technical interview with a mentor.',
+      "Create practical projects that strengthen your resume, portfolio, and job opportunities in modern tech roles.",
+  },
+  {
+    title: "Experience Team Collaboration",
+    description:
+      "Learn Git workflows, agile development, code reviews, and collaborative engineering practices used in startups.",
   },
 ];
 

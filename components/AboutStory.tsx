@@ -8,10 +8,10 @@ export function AboutStory() {
           {/* Left Image */}
           <div className="relative overflow-hidden rounded-2xl aspect-square shadow-lg">
             <Image
-              src="/images/about-story.jpg"
+              src="/images/aboutUs.png"
               alt="ZeroTwoCode team collaborating"
               fill
-              className="object-cover"
+              className="object-contain p-6"
               priority
             />
           </div>
@@ -36,11 +36,11 @@ export function AboutStory() {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8 mt-10">
               <div>
-                <p className="text-3xl font-bold text-primary">2021</p>
+                <p className="text-3xl font-bold text-primary">2025</p>
                 <p className="text-sm text-muted">Year Founded</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary">95%</p>
+                <p className="text-3xl font-bold text-primary">85%</p>
                 <p className="text-sm text-muted">Placement Rate</p>
               </div>
             </div>
