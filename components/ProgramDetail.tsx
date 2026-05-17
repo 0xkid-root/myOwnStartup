@@ -67,7 +67,7 @@ export function ProgramDetail({ id }: ProgramDetailProps) {
 
   // Map program data to display structure
   const program = {
-    badge: `${programData.title.split(' ')[0]} Cohort 2024`,
+    badge: `${programData.title.split(' ')[0]} Cohort 2026`,
     title: `${programData.title} Program`,
     description: programData.description,
     ctaTitle: `Join ${programData.title}`,
