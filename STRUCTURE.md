@@ -1,4 +1,4 @@
-# ZeroTwoCode - Senior Level File Structure
+# piecodingschools - Senior Level File Structure
 
 ## Overview
 This project follows a **feature-based architecture** with a **services layer** for data management. This structure is designed to scale with teams and maintain clean separation of concerns.

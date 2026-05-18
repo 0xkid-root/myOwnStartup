@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer';
 import { ProgramDetail } from '@/components/ProgramDetail';
 
 export const metadata = {
-  title: 'Full Stack Bootcamp - ZeroTwoCode',
+  title: 'Full Stack Bootcamp - piecodingschools',
   description: 'Learn complete web development from frontend to backend. Build and deploy full-stack applications in 10 weeks.',
 };
 

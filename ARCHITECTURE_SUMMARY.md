@@ -2,7 +2,7 @@
 
 ## What We've Built
 
-A **senior-level, enterprise-ready file structure** for ZeroTwoCode that follows industry best practices and scales with your team.
+A **senior-level, enterprise-ready file structure** for piecodingschools that follows industry best practices and scales with your team.
 
 ## Key Features
 

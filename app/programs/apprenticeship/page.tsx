@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer';
 import { ProgramDetail } from '@/components/ProgramDetail';
 
 export const metadata = {
-  title: 'Apprenticeship - ZeroTwoCode',
+  title: 'Apprenticeship - piecodingschools',
   description: 'Join our comprehensive 6-month Apprenticeship program. Get paid while learning from experienced engineers at top startups.',
 };
 

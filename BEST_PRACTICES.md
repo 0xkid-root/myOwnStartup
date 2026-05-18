@@ -1,6 +1,6 @@
 # Best Practices
 
-Guidelines for maintaining code quality and consistency across the ZeroTwoCode project.
+Guidelines for maintaining code quality and consistency across the piecodingschools project.
 
 ## 1. Services - Never Fetch in Components
 

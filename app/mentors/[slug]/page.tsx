@@ -3,7 +3,7 @@ import { MentorProfile } from '@/components/MentorProfile';
 import { Footer } from '@/components/Footer';
 
 export const metadata = {
-  title: 'Mentor Profile - ZeroTwoCode',
+  title: 'Mentor Profile - piecodingschools',
   description: 'Meet one of our experienced mentors.',
 };
 

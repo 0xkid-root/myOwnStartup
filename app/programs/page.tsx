@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer';
 import { WhatYouBuild } from '@/components/WhatYouBuild';
 
 export const metadata = {
-  title: 'Programs - ZeroTwoCode',
+  title: 'Programs - piecodingschools',
   description: 'Explore our programs: Internships, Bootcamps, and Apprenticeships',
 };
 

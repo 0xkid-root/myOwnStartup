@@ -1,6 +1,6 @@
-# 📚 ZeroTwoCode Architecture Documentation
+# 📚 piecodingschools Architecture Documentation
 
-Welcome to the comprehensive documentation for the ZeroTwoCode project architecture. This project follows a **senior-level, feature-based architecture** designed for scalability and team collaboration.
+Welcome to the comprehensive documentation for the piecodingschools project architecture. This project follows a **senior-level, feature-based architecture** designed for scalability and team collaboration.
 
 ## 🚀 Start Here
 

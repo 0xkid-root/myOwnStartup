@@ -51,7 +51,7 @@ export function AboutMission() {
 
         {/* Description */}
         <p className="text-[#64748b] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-          We founded ZeroTwoCode to help students gain practical startup
+          We founded piecodingschools to help students gain practical startup
           experience, build real-world projects, and become industry-ready
           developers through mentorship and hands-on learning.
         </p>

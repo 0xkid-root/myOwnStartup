@@ -19,7 +19,7 @@ export const PROGRAMS_DATA: Program[] = [
     description: 'Intensive 8-week program building real products from scratch. Includes mentorship and job placement support.',
     shortDescription: 'Intensive 8-week program building real products from scratch. Includes mentorship and job placement support.',
     category: 'internship',
-    duration: '8 Weeks (June 10 - Aug 2)',
+    duration: '8 Weeks (July 5 - Aug 2)',
     commitment: 'Full-time (40 hrs/week)',
     location: 'Remote / Lucknow',
     techStack: ['C', 'HTML', 'CSS', 'JS', 'React', 'Node', 'Express', 'MongoDB', 'SQL'],
