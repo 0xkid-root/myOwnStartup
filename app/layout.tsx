@@ -20,6 +20,9 @@ export const metadata: Metadata = {
 
   description:
     "Learn Full Stack, AI, Blockchain, DevOps, and real startup development through internships, bootcamps, and apprenticeship programs.",
+ verification: {
+    google: "Io_4U3HwpwUJh47T_vgbV7JTVEmBVifnMA-sVDgxrxc",
+  },
 
   keywords: [
     "Full Stack Internship",
