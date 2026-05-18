@@ -10,9 +10,8 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'ZeroTwoCode - Build Industry-Ready',
+  title: 'piecodingschools - Build Industry-Ready',
   description: 'Learn AI, Full Stack, Blockchain and Real Startup Development through Internships & Apprenticeships.',
-  generator: 'v0.app',
   viewport: {
     width: 'device-width',
     initialScale: 1,

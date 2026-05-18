@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer';
 import { ProgramDetail } from '@/components/ProgramDetail';
 
 export const metadata = {
-  title: 'Summer Internship - ZeroTwoCode',
+  title: 'Summer Internship - piecodingschools',
   description: 'Join our intensive 8-week Summer Internship program. Build real products from scratch with mentorship and job placement support.',
 };
 

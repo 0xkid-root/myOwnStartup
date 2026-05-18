@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer';
 import { ProgramDetail } from '@/components/ProgramDetail';
 
 export const metadata = {
-  title: 'Blockchain Training - ZeroTwoCode',
+  title: 'Blockchain Training - piecodingschools',
   description: 'Master smart contracts, Web3, and decentralized applications. Build production-ready blockchain projects.',
 };
 

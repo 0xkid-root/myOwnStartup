@@ -227,7 +227,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         {/* Motivation */}
         <div>
           <label htmlFor="motivation" className="block text-sm font-semibold text-foreground mb-2">
-            Why do you want to join ZeroTwoCode? <span className="text-red-500">*</span>
+            Why do you want to join piecodingschools? <span className="text-red-500">*</span>
           </label>
           <textarea
             id="motivation"

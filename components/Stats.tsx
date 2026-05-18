@@ -7,7 +7,7 @@ export function Stats() {
   ];
 
   return (
-    <section className="px-[5%] bg-gradient-to-b from-[#dce8ff] to-[#f0f4ff] pb-16">
+    <section className="px-[5%] bg-gradient-to-b from-[#dce8ff] to-[#f0f4ff] pb-16 pt-2">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-px border border-[#dbe4ff] rounded-2xl overflow-hidden shadow-sm bg-[#dbe4ff]">
         {stats.map((stat, idx) => (
           <div

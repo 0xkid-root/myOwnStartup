@@ -1,9 +1,12 @@
 import {
-  Check,
-  GitPullRequest,
-  FolderKanban,
+  Code2,
   Users,
   Rocket,
+  Award,
+  Github,
+  Briefcase,
+  GitPullRequest,
+  FolderKanban,
 } from "lucide-react";
 
 export function WhyChoose() {
@@ -11,26 +14,32 @@ export function WhyChoose() {
     {
       title: "Real Projects",
       desc: "Build products used in real-world startup scenarios.",
+      icon: Code2,
     },
     {
       title: "Industry Mentorship",
       desc: "Learn directly from experienced software engineers.",
+      icon: Users,
     },
     {
       title: "Startup Workflow",
       desc: "Experience agile teamwork, reviews, and deployments.",
+      icon: Rocket,
     },
     {
       title: "Industry Certificate",
       desc: "Receive verified proof of your practical skills.",
+      icon: Award,
     },
     {
       title: "GitHub Portfolio",
       desc: "Create projects recruiters can actually review.",
+      icon: Github,
     },
     {
       title: "Placement Guidance",
       desc: "Get resume reviews, mock interviews, and career support.",
+      icon: Briefcase,
     },
   ];
 
@@ -61,45 +70,49 @@ export function WhyChoose() {
 
           {/* Features */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {features.map((feature, idx) => (
-              <div
-                key={idx}
-                className="
-                  bg-white/90
-                  backdrop-blur-sm
-                  border border-[#e2e8f0]
-                  rounded-2xl
-                  p-5
-                  hover:-translate-y-1
-                  hover:border-[#bfdbfe]
-                  hover:shadow-[0_10px_40px_rgba(37,99,235,0.08)]
-                  transition-all
-                  duration-300
-                "
-              >
-                <div className="flex items-start gap-3">
-                  
-                  {/* Icon */}
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#edf4ff] to-[#dbeafe] flex items-center justify-center flex-shrink-0">
-                    <Check
-                      className="h-4 w-4 text-[#2563eb]"
-                      strokeWidth={3}
-                    />
-                  </div>
+            {features.map((feature, idx) => {
+              const Icon = feature.icon;
 
-                  {/* Content */}
-                  <div>
-                    <h4 className="text-sm font-bold text-[#0f172a] mb-1">
-                      {feature.title}
-                    </h4>
+              return (
+                <div
+                  key={idx}
+                  className="
+                    bg-white/90
+                    backdrop-blur-sm
+                    border border-[#e2e8f0]
+                    rounded-2xl
+                    p-5
+                    hover:-translate-y-1
+                    hover:border-[#bfdbfe]
+                    hover:shadow-[0_10px_40px_rgba(37,99,235,0.08)]
+                    transition-all
+                    duration-300
+                  "
+                >
+                  <div className="flex items-start gap-3">
+                    
+                    {/* Icon */}
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#edf4ff] to-[#dbeafe] flex items-center justify-center flex-shrink-0">
+                      <Icon
+                        className="h-5 w-5 text-[#2563eb]"
+                        strokeWidth={2.3}
+                      />
+                    </div>
 
-                    <p className="text-sm text-[#64748b] leading-relaxed">
-                      {feature.desc}
-                    </p>
+                    {/* Content */}
+                    <div>
+                      <h4 className="text-sm font-bold text-[#0f172a] mb-1">
+                        {feature.title}
+                      </h4>
+
+                      <p className="text-sm text-[#64748b] leading-relaxed">
+                        {feature.desc}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -130,10 +143,6 @@ export function WhyChoose() {
             {/* Top */}
             <div className="relative flex items-center justify-between mb-7">
               <div>
-                {/* <p className="text-xs font-semibold text-[#64748b]">
-                  Internship Dashboard
-                </p> */}
-
                 <h3 className="text-2xl font-bold text-[#0f172a] mt-1">
                   Full Stack Internship
                 </h3>

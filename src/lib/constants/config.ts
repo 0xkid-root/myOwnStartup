@@ -4,7 +4,7 @@
  */
 
 export const APP_CONFIG = {
-  name: 'ZeroTwoCode',
+  name: 'piecodingschools',
   description: 'Empowering the next generation of developers with industry-ready skills',
   url: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000',
   

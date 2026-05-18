@@ -4,8 +4,8 @@ import { ApplicationHero } from '@/src/features/application/components/Applicati
 import { ApplicationForm } from '@/src/features/application/components/ApplicationForm';
 
 export const metadata = {
-  title: 'Apply Now | ZeroTwoCode',
-  description: 'Apply to ZeroTwoCode programs and start your tech career journey today.',
+  title: 'Apply Now | piecodingschools',
+  description: 'Apply to piecodingschools programs and start your tech career journey today.',
 };
 
 export default function ApplyPage() {
