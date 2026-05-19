@@ -8,6 +8,8 @@ import { Testimonials } from '@/components/Testimonials';
 import { CTA } from '@/components/CTA';
 import { Footer } from '@/components/Footer';
 import { ProgramsPreview } from '@/components/ProgramsPreview';
+import { TrustSection } from "@/components/TrustSection";
+import { TrustRecognition } from "@/components/TrustRecognition";
 
 export default function Home() {
   return (
@@ -18,8 +20,11 @@ export default function Home() {
       <TechStack />
       <ProgramsPreview />
       <WhyChoose />
+      <TrustSection />
       <Projects />
       {/* <Testimonials /> */}
+            <TrustRecognition />
+
       <CTA />
       <Footer />
     </main>
