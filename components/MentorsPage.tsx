@@ -53,7 +53,7 @@ const mentorsData = [
   {
     id: 4,
     slug: "rishav-singh",
-    name: "Rishav Singh",
+    name: "Rishabh Singh",
     role: "Marketing Mentor",
     specialty: "marketing",
     company: "GrowX",
