@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -49,24 +49,24 @@ export function Footer() {
           {/* Social Icons */}
           <div className="flex gap-3">
             <a
-              href="#"
+              href="https://x.com/piecodingschool"
               className="w-10 h-10 rounded-xl border border-[#e2e8f0] flex items-center justify-center text-[#64748b] hover:bg-[#edf4ff] hover:text-[#2563eb] transition-all"
             >
               <Twitter className="h-4 w-4" />
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/company/piecodingschool/"
               className="w-10 h-10 rounded-xl border border-[#e2e8f0] flex items-center justify-center text-[#64748b] hover:bg-[#edf4ff] hover:text-[#2563eb] transition-all"
             >
               <Linkedin className="h-4 w-4" />
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/piecodingschools/"
               className="w-10 h-10 rounded-xl border border-[#e2e8f0] flex items-center justify-center text-[#64748b] hover:bg-[#edf4ff] hover:text-[#2563eb] transition-all"
             >
-              <Github className="h-4 w-4" />
+              <Instagram className="h-4 w-4" />
             </a>
           </div>
         </div>

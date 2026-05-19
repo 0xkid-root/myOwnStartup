@@ -13,62 +13,94 @@ export const PROGRAM_CATEGORIES = {
 
 export const PROGRAMS_DATA: Program[] = [
   {
-    id: '1',
-    slug: 'summer-internship',
-    title: 'Summer Internship',
-    description: 'Intensive 8-week program building real products from scratch. Includes mentorship and job placement support.',
-    shortDescription: 'Intensive 8-week program building real products from scratch. Includes mentorship and job placement support.',
-    category: 'internship',
-    duration: '8 Weeks (July 5 - Aug 2)',
-    commitment: 'Full-time (40 hrs/week)',
-    location: 'Remote / Lucknow',
-    techStack: ['C', 'HTML', 'CSS', 'JS', 'React', 'Node', 'Express', 'MongoDB', 'SQL'],
-    circleColor: 'bg-[#3b6ef8]',
-    outcomes: [
-      {
-        id: '1',
-        number: 1,
-        title: 'Programming Fundamentals',
-        description: 'Build a strong foundation in computer science using C. Understand memory management, data structures, and algorithmic thinking before moving to higher-level languages.',
-        category: 'other',
-      },
-      {
-        id: '2',
-        number: 2,
-        title: 'Frontend Web Core',
-        description: 'Master the building blocks of the web with HTML, CSS, and modern JavaScript (ES6+). Create responsive, accessible, and interactive user interfaces from scratch.',
-        category: 'frontend',
-      },
-      {
-        id: '3',
-        number: 3,
-        title: 'Advanced Frontend',
-        description: 'Dive deep into React. Learn component architecture, hooks, state management, and how to build scalable single-page applications.',
-        category: 'frontend',
-      },
-      {
-        id: '4',
-        number: 4,
-        title: 'Backend Development',
-        description: 'Construct robust server applications using Node.js and Express. Build RESTful APIs, handle authentication, and manage server logic.',
-        category: 'backend',
-      },
-      {
-        id: '5',
-        number: 5,
-        title: 'Database Architecture',
-        description: 'Learn to design and query databases. Work with both NoSQL (MongoDB) and relational databases (SQL) to understand data modeling and persistent storage.',
-        category: 'backend',
-      },
-      {
-        id: '6',
-        number: 6,
-        title: 'Professional Workflows',
-        description: 'Operate like a real engineering team. Master Git version control, code reviews, Agile methodologies, and deploying your full-stack applications.',
-        category: 'other',
-      },
-    ],
-  },
+  id: '1',
+  slug: 'summer-internship',
+  title: 'Summer Internship',
+  description:
+    'A practical 45-day internship focused on programming fundamentals, frontend development, backend basics, and real-world project building.',
+
+  shortDescription:
+    'Learn C, Web Development, React, Node.js, databases, and build real projects during this 45-day internship.',
+
+  category: 'internship',
+
+  duration: '45 Days',
+  commitment: '2-4 Hours / Day',
+  location: 'Remote / Offline - Lucknow',
+
+  techStack: [
+    'C',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Node.js',
+    'Express',
+    'MongoDB',
+    'Git',
+  ],
+
+  circleColor: 'bg-[#3b6ef8]',
+
+  outcomes: [
+    {
+      id: '1',
+      number: 1,
+      title: 'C Programming Fundamentals',
+      description:
+        'Learn data types, operators, loops, arrays, strings, functions, pointers, recursion, structures, file handling, and solve coding questions.',
+      category: 'other',
+    },
+
+    {
+      id: '2',
+      number: 2,
+      title: 'Frontend Development',
+      description:
+        'Build responsive websites using HTML, CSS, Flexbox, Grid, and modern JavaScript concepts.',
+      category: 'frontend',
+    },
+
+    {
+      id: '3',
+      number: 3,
+      title: 'React Development',
+      description:
+        'Understand components, props, hooks, routing, API integration, and build interactive frontend applications using React.',
+      category: 'frontend',
+    },
+
+    {
+      id: '4',
+      number: 4,
+      title: 'Backend Development',
+      description:
+        'Learn Node.js and Express to build APIs, manage routes, handle authentication, and connect databases.',
+      category: 'backend',
+    },
+
+    {
+      id: '5',
+      number: 5,
+      title: 'Database & Git',
+      description:
+        'Work with MongoDB basics, CRUD operations, and Git/GitHub workflows used in real development teams.',
+      category: 'backend',
+    },
+
+    {
+      id: '6',
+      number: 6,
+      title: 'Real-world Projects',
+      description:
+        'Build beginner-friendly projects like a portfolio website, task manager, recipe generator using AI APIs, and full-stack applications.',
+      category: 'other',
+    },
+  ],
+
+  createdAt: new Date('2024-01-01'),
+  updatedAt: new Date('2024-01-01'),
+},
   {
     id: '2',
     slug: 'winter-internship',
@@ -125,6 +157,8 @@ export const PROGRAMS_DATA: Program[] = [
         category: 'other',
       },
     ],
+    createdAt: new Date('2024-01-01'),
+    updatedAt: new Date('2024-01-01'),
   },
   {
     id: '3',
@@ -182,6 +216,8 @@ export const PROGRAMS_DATA: Program[] = [
         category: 'other',
       },
     ],
+    createdAt: new Date('2024-01-01'),
+    updatedAt: new Date('2024-01-01'),
   },
   {
     id: '4',
@@ -239,6 +275,8 @@ export const PROGRAMS_DATA: Program[] = [
         category: 'other',
       },
     ],
+    createdAt: new Date('2024-01-01'),
+    updatedAt: new Date('2024-01-01'),
   },
   {
     id: '5',
@@ -296,6 +334,8 @@ export const PROGRAMS_DATA: Program[] = [
         category: 'other',
       },
     ],
+    createdAt: new Date('2024-01-01'),
+    updatedAt: new Date('2024-01-01'),
   },
   {
     id: '6',
@@ -353,6 +393,8 @@ export const PROGRAMS_DATA: Program[] = [
         category: 'other',
       },
     ],
+    createdAt: new Date('2024-01-01'),
+    updatedAt: new Date('2024-01-01'),
   },
   {
     id: '7',
@@ -366,5 +408,7 @@ export const PROGRAMS_DATA: Program[] = [
     location: 'Remote',
     techStack: ['Various', 'Git', 'GitHub', 'Open Source'],
     circleColor: 'bg-[#0d0f1a]',
+    createdAt: new Date('2024-01-01'),
+    updatedAt: new Date('2024-01-01'),
   },
 ];
