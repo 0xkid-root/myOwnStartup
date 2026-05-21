@@ -8,11 +8,11 @@ export function TrustRecognition() {
     },
     {
       title: "Government e-Marketplace",
-      image: "/certificate/GEM.jpeg",
+      image: "/certificate/gem.jpeg",
     },
     {
       title: "ISO 9001:2015 Certified",
-      image: "/certificate/ISO.jpeg",
+      image: "/certificate/iso.jpeg",
     },
     {
       title: "Startup India Recognized",
