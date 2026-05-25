@@ -3,6 +3,8 @@ import { DM_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import "./globals.css";
+import { WhatsAppChatButton } from '@/components/WhatsAppChatButton';
+
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -134,6 +136,7 @@ export default function RootLayout({
         </Script>
 
         {children}
+        <WhatsAppChatButton />
 
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
