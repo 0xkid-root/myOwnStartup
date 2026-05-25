@@ -411,4 +411,127 @@ export const PROGRAMS_DATA: Program[] = [
     createdAt: new Date('2024-01-01'),
     updatedAt: new Date('2024-01-01'),
   },
+
+  {
+  id: '8',
+
+  slug: 'full-stack-summer-internship',
+
+  title: 'Full Stack Summer Internship',
+
+  description:
+    'An intensive 2-month internship designed for 2nd and 3rd year students to master modern full stack development, MERN stack, advanced React concepts, backend architecture, deployment, and real-world product building.',
+
+  shortDescription:
+    'Master HTML, CSS, JavaScript, React, MERN stack, advanced backend concepts, and build production-level projects with mentorship.',
+
+  category: 'internship',
+
+  duration: '2 Months',
+
+  commitment: '2-4 Hours / Day',
+
+  location: 'Remote / Offline - Lucknow',
+
+  techStack: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Tailwind CSS',
+    'React',
+    'Next.js',
+    'React Query',
+    'Node.js',
+    'Express',
+    'MongoDB',
+    'REST APIs',
+    'JWT Auth',
+    'Redis',
+    'Git',
+    'GitHub',
+    'Deployment',
+    'Postman',
+    'Socket.io',
+  ],
+
+  circleColor: 'bg-[#3b6ef8]',
+
+  outcomes: [
+    {
+      id: '1',
+      number: 1,
+      title: 'Modern Frontend Development',
+      description:
+        'Learn HTML, CSS, Tailwind CSS, JavaScript, React, reusable components, hooks, routing, API integration, and responsive UI development.',
+      category: 'frontend',
+    },
+
+    {
+      id: '2',
+      number: 2,
+      title: 'Advanced React & Next.js',
+      description:
+        'Master advanced React concepts including custom hooks, context API, Redux, optimization, Next.js routing, layouts, and production architecture.',
+      category: 'frontend',
+    },
+
+    {
+      id: '3',
+      number: 3,
+      title: 'Backend Development & APIs',
+      description:
+        'Build scalable backend applications using Node.js and Express. Learn middleware, REST APIs, authentication, authorization, and API security.',
+      category: 'backend',
+    },
+
+    {
+      id: '4',
+      number: 4,
+      title: 'Database & Authentication',
+      description:
+        'Work with MongoDB, CRUD operations, JWT authentication, protected routes, role-based access, and real-world backend workflows.',
+      category: 'backend',
+    },
+
+    {
+      id: '5',
+      number: 5,
+      title: 'GitHub & Deployment',
+      description:
+        'Learn Git, GitHub collaboration, pull requests, project structure, deployment using Vercel and Render, and production best practices.',
+      category: 'other',
+    },
+
+    {
+      id: '6',
+      number: 6,
+      title: 'Real-world Major Projects',
+      description:
+        'Build 3 major production-level projects including authentication systems, dashboards, AI integrations, and full stack applications.',
+      category: 'other',
+    },
+
+    {
+      id: '7',
+      number: 7,
+      title: 'Mini Projects & Practice',
+      description:
+        'Create multiple mini projects like weather app, portfolio, chat app, expense tracker, and API-based applications for practical learning.',
+      category: 'other',
+    },
+
+    {
+      id: '8',
+      number: 8,
+      title: 'Job-Oriented Preparation',
+      description:
+        'Get interview preparation, resume building, GitHub portfolio guidance, coding practice, LinkedIn optimization, and career mentorship.',
+      category: 'other',
+    },
+  ],
+
+  createdAt: new Date('2024-01-01'),
+
+  updatedAt: new Date('2024-01-01'),
+}
 ];
