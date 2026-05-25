@@ -28,6 +28,15 @@ export function Programs() {
       circleColor: "bg-[#3b6ef8]",
     },
     {
+  id: 7,
+  slug: "full-stack-summer-internship",
+  image: "/images/full-stack-summer.png",
+  title: "Full Stack Summer Internship",
+  desc: "Master HTML, CSS, JavaScript, React, MERN stack, backend APIs, authentication, deployment, and build production-level applications with job-oriented learning.",
+  category: "internship",
+  circleColor: "bg-[#3b6ef8]",
+},
+    {
       id: 2,
       slug: "winter-internship",
       image: "/images/winter-intership.png",

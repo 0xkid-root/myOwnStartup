@@ -241,22 +241,18 @@ export function ProgramDetail({ id }: ProgramDetailProps) {
       </section>
 
       {/* Enhanced CTA Section */}
-      <section className="py-32 px-[5%] bg-gradient-to-b from-background to-[#f0f4ff] relative overflow-hidden">
-        {/* Decorative elements */}
+      {/* <section className="py-32 px-[5%] bg-gradient-to-b from-background to-[#f0f4ff] relative overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-[#3b6ef8]/10 to-transparent rounded-full blur-3xl -z-10"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-[#5b5ef8]/10 to-transparent rounded-full blur-3xl -z-10"></div>
 
         <div className="max-w-4xl mx-auto">
           <div className="relative group">
-            {/* Enhanced background with multiple layers */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#0d0f1a] via-[#1a1f3a] to-[#0d0f1a] rounded-3xl opacity-95 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#3b6ef8]/20 via-[#2452d4]/10 to-[#3b6ef8]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#3b6ef8] via-[#5b5ef8] to-[#3b6ef8] rounded-3xl opacity-0 group-hover:opacity-20 blur transition-all duration-300"></div>
 
-            {/* Border */}
             <div className="absolute inset-0 border border-[#3b6ef8]/30 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-            {/* Content */}
             <div className="relative z-10 p-16 md:p-20 text-center text-white">
               <div className="mb-8">
                 <span className="inline-block text-xs font-bold text-[#3b6ef8] tracking-widest mb-4">LIMITED SPOTS</span>
@@ -285,7 +281,7 @@ export function ProgramDetail({ id }: ProgramDetailProps) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

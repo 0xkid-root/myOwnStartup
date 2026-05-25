@@ -6,10 +6,10 @@ export function TrustRecognition() {
       title: "MCA Registered Company",
       image: "/certificate/MCA.jpeg",
     },
-    {
-      title: "Government e-Marketplace",
-      image: "/certificate/gem.jpeg",
-    },
+    // {
+    //   title: "Government e-Marketplace",
+    //   image: "/certificate/gem.jpeg",
+    // },
     {
       title: "ISO 9001:2015 Certified",
       image: "/certificate/iso.jpeg",
@@ -21,6 +21,10 @@ export function TrustRecognition() {
     {
       title: "MSME Registered",
       image: "/certificate/msme.jpeg",
+    },
+    {
+      title: "StartIn Up",
+      image: "/certificate/startup-up.jpg",
     },
   ];
 

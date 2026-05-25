@@ -11,6 +11,13 @@ export function ProgramsPreview() {
       desc: "Intensive 8-week program building real products from scratch with mentorship and placement guidance.",
       badge: "8 Weeks",
     },
+ {
+  image: "/images/full-stack-summer.png",
+  title: "Full Stack Summer Internship",
+  slug: "programs/full-stack-summer-internship",
+  desc: "Master HTML, CSS, JavaScript, React, MERN stack, backend APIs, authentication, deployment, and build production-level applications with job-oriented learning and mentorship.",
+  badge: "2 Months",
+},
     {
       image: "/images/winter-intership.png",
       title: "Winter Internship",
