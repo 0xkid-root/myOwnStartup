@@ -2,9 +2,9 @@ import { Navigation } from '@/components/Navigation';
 import { AboutMission } from '@/components/AboutMission';
 import { AboutStory } from '@/components/AboutStory';
 import { CoreValues } from '@/components/CoreValues';
-import { LearnFromBest } from '@/components/LearnFromBest';
 import { CTA } from '@/components/CTA';
 import { Footer } from '@/components/Footer';
+import { WhyPieCodingSchools } from '@/components/WhyPieCodingSchools';
 
 export default function About() {
   return (
@@ -13,7 +13,7 @@ export default function About() {
       <AboutMission />
       <AboutStory />
       <CoreValues />
-      <LearnFromBest />
+      <WhyPieCodingSchools />
       <CTA />
       <Footer />
     </main>
