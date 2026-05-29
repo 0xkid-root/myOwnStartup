@@ -251,7 +251,7 @@ export default function FullStackSummerInternshipPage() {
 
       </div>
     </div>
-    <div className="group">
+    {/* <div className="group">
   <p className="text-[#718096] text-xs uppercase font-bold tracking-wider mb-2">
     Program Fees
   </p>
@@ -270,7 +270,7 @@ export default function FullStackSummerInternshipPage() {
     Includes mentorship, projects, recordings, certificates,
     GitHub guidance, and interview preparation.
   </p>
-</div>
+</div> */}
   </div>
 </section>
 
