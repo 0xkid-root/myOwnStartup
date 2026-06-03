@@ -4,8 +4,9 @@ import { useState } from 'react';
 import { PROGRAMS_DATA } from '@/src/features/programs/constants/program.constants';
 import { CODING_EXPERIENCE_LEVELS, DEFAULT_FORM_VALUES } from '../constants/application.constants';
 import { ApplicationFormData, ApplicationStatus } from '../types/application.types';
-import { ApplicationService } from '../services/application.service';
 import { Button } from '@/components/ui/button';
+import { EmailService } from '../services/email.service';
+import { toast } from 'sonner';
 
 export function ApplicationForm() {
   const [formData, setFormData] = useState<ApplicationFormData>(DEFAULT_FORM_VALUES);
@@ -31,58 +32,71 @@ export function ApplicationForm() {
   };
 
 const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  try {
-    setStatus("loading");
+    try {
+      setStatus("loading");
 
-    const response = await fetch(
-      "https://sheetdb.io/api/v1/ms5yn4qm30tpx",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+      const response = await fetch(
+        "https://sheetdb.io/api/v1/ms5yn4qm30tpx",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            data: [
+              {
+                Timestamp: new Date().toLocaleString(),
+                "Full Name": formData.fullName,
+                Email: formData.email,
+                Phone: formData.phone,
+                Program: formData.program,
+                Experience: formData.codingExperience,
+                Motivation: formData.motivation,
+              },
+            ],
+          }),
+        }
+      );
 
-        body: JSON.stringify({
-          data: [
-            {
-              Timestamp: new Date().toLocaleString(),
-              "Full Name": formData.fullName,
-              Email: formData.email,
-              Phone: formData.phone,
-              Program: formData.program,
-              Experience: formData.codingExperience,
-              Motivation: formData.motivation,
-            },
-          ],
-        }),
+      const data = await response.json();
+      console.log(data, "hello how are you baby");
+
+      if (response.ok) {
+        setStatus("success");
+        setSuccessMessage("Application submitted successfully!");
+        toast.success("Application submitted successfully!", {
+          description: "We will review your profile and get back to you soon.",
+          duration: 5000,
+        });
+
+        // --- THE CODESPACE FOR TRIGGERING THE MODULAR EMAIL SERVICE ---
+        // Fire and forget, or await if you want to handle errors inside this block
+        await EmailService.sendRegistrationEmail({
+          studentName: formData.fullName,
+          studentEmail: formData.email,
+          studentPhone: formData.phone,
+          experienceLevel: formData.codingExperience,
+          selectedProgram: formData.program,
+        });
+
+        setFormData(DEFAULT_FORM_VALUES);
+
+        setTimeout(() => {
+          setStatus("idle");
+          setSuccessMessage("");
+        }, 5000);
+      } else {
+        setStatus("error");
+        console.error(data);
       }
-    );
-
-    const data = await response.json();
-
-    console.log(data);
-
-    if (response.ok) {
-      setStatus("success");
-      setSuccessMessage("Application submitted successfully!");
-
-      setFormData(DEFAULT_FORM_VALUES);
-
-      setTimeout(() => {
-        setStatus("idle");
-        setSuccessMessage("");
-      }, 5000);
-    } else {
+    } catch (error) {
+      console.error(error);
       setStatus("error");
-      console.error(data);
     }
-  } catch (error) {
-    console.error(error);
-    setStatus("error");
-  }
-};
+  };
+
   return (
     <div className="w-full lg:w-2/3 bg-white rounded-2xl p-8 md:p-12">
       <h2 className="text-3xl font-bold text-primary mb-8">Application Form</h2>
@@ -171,39 +185,6 @@ const handleSubmit = async (e: React.FormEvent) => {
           </div>
         </div>
 
-        {/* GitHub and LinkedIn */}
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label htmlFor="githubProfile" className="block text-sm font-semibold text-foreground mb-2">
-              GitHub Profile <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="text"
-              id="githubProfile"
-              name="githubProfile"
-              value={formData.githubProfile}
-              onChange={handleChange}
-              placeholder="github.com/username"
-              className="w-full px-4 py-3 border border-[#e0e0e0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b6ef8] focus:border-transparent transition-colors"
-            />
-          </div>
-          <div>
-            <label htmlFor="linkedinProfile" className="block text-sm font-semibold text-foreground mb-2">
-              LinkedIn Profile
-            </label>
-            <input
-              type="text"
-              id="linkedinProfile"
-              name="linkedinProfile"
-              value={formData.linkedinProfile}
-              onChange={handleChange}
-              placeholder="linkedin.com/in/username"
-              className="w-full px-4 py-3 border border-[#e0e0e0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b6ef8] focus:border-transparent transition-colors"
-            />
-          </div>
-        </div> */}
-
-        {/* Coding Experience */}
         <div>
           <label htmlFor="codingExperience" className="block text-sm font-semibold text-foreground mb-2">
             Coding Experience <span className="text-red-500">*</span>
