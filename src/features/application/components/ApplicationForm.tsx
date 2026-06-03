@@ -128,7 +128,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               name="fullName"
               value={formData.fullName}
               onChange={handleChange}
-              placeholder="e.g. Jane Doe"
+              placeholder="e.g. Rohit Kumar"
               className="w-full px-4 py-3 border border-[#e0e0e0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b6ef8] focus:border-transparent transition-colors"
             />
           </div>
@@ -142,7 +142,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="jane@example.com"
+              placeholder="rohit@example.com"
               className="w-full px-4 py-3 border border-[#e0e0e0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b6ef8] focus:border-transparent transition-colors"
             />
           </div>
@@ -160,7 +160,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="+1 (555) 000-0000"
+              placeholder="+916299349073"
               className="w-full px-4 py-3 border border-[#e0e0e0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b6ef8] focus:border-transparent transition-colors"
             />
           </div>
